@@ -1,0 +1,46 @@
+{
+  "name": "@red-cup-engineering/footing",
+  "version": "0.1.3",
+  "type": "module",
+  "description": "Shared daily tournament dates, submission guards, durable local runs and scores, replay verification and leaderboard ranking.",
+  "keywords": [
+    "561-group",
+    "footing",
+    "daily-tournament",
+    "leaderboard",
+    "replay-verification"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    "./dates": {
+      "default": "./src/dates.mjs"
+    },
+    "./guard": {
+      "default": "./src/guard.mjs"
+    },
+    "./leaderboard": {
+      "default": "./src/leaderboard.mjs"
+    },
+    "./store": {
+      "default": "./src/store.mjs"
+    },
+    "./store-factory": {
+      "default": "./src/store-factory.mjs"
+    },
+    "./submission": {
+      "default": "./src/submission.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "check": "for f in src/*.mjs; do node --check \"$f\" || exit 1; done",
+    "test": "node --test src/*.test.mjs"
+  }
+}
