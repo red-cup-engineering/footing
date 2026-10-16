@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/footing",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "type": "module",
   "description": "Shared daily tournament dates, submission guards, durable local runs and scores, replay verification and leaderboard ranking.",
   "keywords": [
@@ -42,5 +42,6 @@
   "scripts": {
     "check": "for f in src/*.mjs; do node --check \"$f\" || exit 1; done",
     "test": "node --test src/*.test.mjs"
-  }
+  },
+  "private": false
 }
