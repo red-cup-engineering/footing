@@ -3,6 +3,11 @@
   "version": "0.1.5",
   "type": "module",
   "description": "Shared daily tournament dates, submission guards, durable local runs and scores, replay verification and leaderboard ranking.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-game-system-services-section/services/footing"
+  },
   "keywords": [
     "561-group",
     "footing",
